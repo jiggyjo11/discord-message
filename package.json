@@ -1,0 +1,29 @@
+{
+  "name": "discord-send-message",
+  "version": "1.0.0",
+  "description": "A package that allows to make a simple post request to send simple messages to Discord channels.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiggyjo11/discord-message.git"
+  },
+  "keywords": [
+    "discord",
+    "message",
+    "notify",
+    "channel",
+    "post-request"
+  ],
+  "author": "Johannes Weniger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jiggyjo11/discord-message/issues"
+  },
+  "homepage": "https://github.com/jiggyjo11/discord-message#readme",
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
+}
