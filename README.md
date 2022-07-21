@@ -7,12 +7,20 @@ Step 2) Generate a token in the developer portal and store it as an ENV in your 
 
 Step 3) Activate the Developer mode on your Discord server and copy the channel ID you want to send messages to.
 
-Step 4) In your JS code import this package, create a message string and pass it along with the DISCORD_TOKEN and channelId to the discordMessage function as in the example below.
+Step 4) In your JS code import this package, create a messageString and pass it along with the DISCORD_TOKEN and channelId to the discordMessage function as in the example below.
 
-discordMessage({ \
-DISCORD_TOKEN: 'YOUR TOKEN GOES HERE AS PROCESSED ENV', \
-messageString: 'YOUR MESSAGE GOES HERE', \
-channelId: 'YOUR CHANNEL ID GOES HERE'\
-})
+Sample Usage: 
 
-
+ async function sendMessageAfterProjectCreation() { \
+    try { \
+      await messageDiscordChannel({ \
+        DISCORD_TOKEN: 'xxxx', \
+        messageString: 'xxx', \
+        channelId: 'xxx' \
+      }) \
+    } catch (error) { \
+      // Handle the errors we might get from the discord-send-message library \
+      // We can just log them for now or we could show a message to the user \
+      console.error(error) \
+    } \
+  } \

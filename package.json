@@ -1,6 +1,6 @@
 {
   "name": "discord-send-message",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A package that allows to make a simple post request to send simple messages to Discord channels.",
   "main": "index.js",
   "scripts": {
